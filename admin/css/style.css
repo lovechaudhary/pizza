@@ -1,0 +1,182 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	background: #EAEAEA;
+	font-family:'Open Sans Condensed',Calibri, Helvetica, Arial, sans-serif;
+    min-height: 800px;
+}
+a{
+    color:#52BCEC;
+}
+.bg_darkblue{background: #3F51B5;color:white;}
+.bg_pink{background: #9B26AF;color:white;}
+.bg_brown{background: #785447;color:white;}
+.bg_green{background: #009688 ;color:white;}
+.bg_blue{background: #03A9F4;color:white;}
+.bg_yellow{background: #FFC107;color:white;}
+
+
+
+
+
+.header {
+    background: #444;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header li {
+    float: left;
+}
+
+.header ul a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.header a:hover {
+    background: #52BCEC;
+}
+
+.logo {
+    color: #52BCEC;
+    font-size: 31px;
+    float: left;
+}
+
+.logo h1 {
+    font-weight: normal;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.wall {
+    background: #52BCEC;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.wall h1 {
+    color: white;
+    font-size: 72px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.wall h2 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: normal;
+}
+
+ul.left_link {
+    float: left;
+}
+
+ul.right_link {
+    float: right;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+}
+
+.group {
+    width: 240px;
+    padding: 20px 10px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.group i {
+    display: block;
+    text-align: center;
+    font-size: 87px;
+    margin-bottom: 15px;
+}
+
+.group th,.group td {
+    text-align: left;
+    padding: 8px;
+}
+
+.group a {
+    background: #444;
+    color: white;
+    text-decoration: none;
+    padding: 7px 19px;
+    display: block;
+    text-align: center;
+    margin: 3px 0px;
+}
+
+.group h2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 7px;
+}
+
+.form {
+    background: white;
+}
+
+.form td {
+    padding: 10px;
+}
+
+.form th {
+    padding: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.form table {
+    padding: 24px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form select,
+.form textarea
+{
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.form select{
+    width: 325px;
+    
+}
+.form input[type="radio"] {
+    margin-left: 14px;
+    margin-right: 5px;
+}
+
+.form input[type="submit"] {
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+table.members td,
+table.members th{
+    padding: 10px;
+    text-align: left;
+}
+table.members tr:nth-child(odd){
+    background: #e2e2e2;
+}

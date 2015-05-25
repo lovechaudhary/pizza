@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 101 Template</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Online Proffering</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Groups <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/admin/group/add">Add Groups</a></li>
+              <li><a href="/admin/groups">Show Groups</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Users <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="/admin/Users/show">Show Users</a></li>
+              <li><a href="/admin/Users/show1">Show Block Users</a></li>
+          </ul>
+        </li>
+      
+		    <li><a href="/admin/account/change-password">Change Password</a></li>
+		    <li><a href="/admin/logout">Logout</a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  	<h1>Add Groups</h1>
+		<form action="" method="post">
+	
+	<div class="col-md-6">
+		<div class="form-group">
+			<label for="">Group Name</label>
+				<input type="text" name="name" class="form-control" id="">
+		</div>
+		<div class="form-group">
+			<label for="">Amount</label>
+			<div class="input-group">
+      			<div class="input-group-addon">Rs</div>
+				<input type="text" name="amount" class="form-control" id="amount">
+			</div>	
+		</div>
+		<div class="form-group">
+			<label for="">Total Members</label>
+				<input type="text" name="total_members" class="form-control" id="total_members">
+		</div>
+		<div class="form-group">
+			<label for="">Installment</label>
+			<div class="input-group">
+      			<div class="input-group-addon">Rs</div>
+				<input type="text" name="installment" class="form-control" id="installment" value="0">
+			</div>	
+		</div>
+		<div class="form-group">
+			<label for="">Maximum Loss</label>
+			<div class="input-group">
+				<input type="text" name="max_loss" class="form-control" id="max_loss">
+      			<div class="input-group-addon">%</div>
+			</div>	
+		</div>
+		<div class="form-group">
+			<label for="">Start Date</label>
+				<input type="text" name="start_date" class="form-control datepicker" id="start_date">
+		</div>
+
+		<div class="form-group">
+			<label for="">Proffering Date (every month)</label>
+			<select name="proffering_date" id="proffering_date" class="form-control">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+							</select>
+		</div>
+	
+		<div class="form-group">
+			<input type="submit" value="Create Group" class="btn btn-primary">
+		</div>
+
+	</div>
+</form>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/app.js"></script>
+  </body>
+</html>
