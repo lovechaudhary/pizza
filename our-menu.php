@@ -32,7 +32,7 @@
 					<div class="product_block">
 						<img src="admin/product_images/<?php echo $res['img'] ?>" alt="<?php echo $res['prod_name'] ?>" title="<?php echo $res['prod_name'] ?>" class="img-responsive">
 						<h4 class="text-center" style="color:#E81A24;font-weight:bold;"><?php echo $res['prod_name'] ?></h4>
-						<div class="price">From <img src="images/pound_green.png" align="absmiddle" alt="" class="pound"> <?php echo $res['price'] ?></div>
+						<div class="price">From <img src="images/pound_green.png" align="absmiddle" alt="" class="pound"> <?php echo number_format($res['price'],2); ?></div>
 						<form action="cart_update.php" method="post">
 							<button class="addToCart">Add to cart</button>
 							<input type="hidden" name="prod_code" value="<?php echo $res['id'] ?>">
@@ -76,21 +76,25 @@
 							
 						</div>
 						<div class="col-md-6 text-right">
-							<h4><img src="images/pound_green.png" width="10"/>&nbsp;<b><?php echo $cart_item['price'] ?></b></h4>
+							<h4><img src="images/pound_green.png" width="10"/>&nbsp;<b><?php echo number_format($cart_item['price'],2); ?></b></h4>
 						</div>
 					</div>
 				</div>
+				<?php						
+					$subtotal = ($cart_item['price']*$cart_item['qty']);
+					$total = ($total+$subtotal);					
+				?>
+
 			<?php } ?>
 			<div class="col-md-12 orderBlock">
 				<div class="col-md-6">
-					<h3>Total</h3>
+					<h4><b>Total</b></h4>
 				</div>
-				<div class="col-md-6 text-right">
-					<?php						
-						$subtotal = ($cart_item['price']*$cart_item['qty']);
-						$total = ($total+$subtotal);					
-					?>
-					<h3><img src="images/pound_green.png" width="10"/> <?php echo number_format($total, 2); ?></h3>
+				<div class="col-md-6 text-right">					
+					<h4>
+						<img src="images/pound_green.png" width="10"/>
+						<b><?php echo number_format($total, 2); ?></b>
+					</h4>
 				</div>
 			</div>	
 			<?php 

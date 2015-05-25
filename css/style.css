@@ -21,7 +21,7 @@ body{
 	background: #E81A24!important;
 }
 .topmenu {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .navbar-default .navbar-nav>li>a{
@@ -189,4 +189,12 @@ span.quantity {
     background-color: white;
     padding-top: 18px;
     border-bottom: 1px solid #ccc;
+}
+.session {
+    margin-top: 20px;
+}
+.session a{
+    color:#E81A24;
+    margin-left: 10px;
+    font-weight: bold;  
 }

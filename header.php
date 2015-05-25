@@ -21,7 +21,19 @@
   </head>
   <body>
     <div class="container">
-
+<div class="row">
+  <div class="col-md-12 text-right session">
+    <?php 
+      if(isset($_SESSION['UID'])!='') {
+        ?>
+          Welcome <a href="#"><?php echo $_SESSION['UNAME']; ?></a> <a href="logout.php">logout !</a>
+        <?php
+      } else {
+        echo '';
+      }
+    ?>    
+  </div>
+</div>
 <nav class="navbar navbar-default topmenu">
   <div class="container-fluid">
     <div class="navbar-header">

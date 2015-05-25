@@ -6,37 +6,12 @@
           <div class="col-md-3">
             <h3>Menu</h3>
             <ul class="list-unstyled">
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">What's New</a>
-                
-              </li>
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">McMuffins</a>
-                
-              </li>
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">Sides</a>
-                
-              </li>
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">Desserts</a>
-                
-              </li>
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">Beverages</a>
-                
-              </li>
-              <li class="menu-item">
-                
-                <a class="menu-item-target" href="#">Happy Meals</a>
-                
-              </li>             
-                      
+              <?php 
+                $qre1 = mysql_query("SELECT * FROM tbl_menu WHERE isdisplay=1 ORDER BY menu_name ASC");
+                while($res1 = mysql_fetch_array($qre1)) {
+                  echo '<li class="menu-item"><a class="menu-item-target" href="our-menu.php?category='.$res1['id'].'">'.$res1['menu_name'].'</a></li>';
+                }
+              ?>                    
             </ul>
           </div>
           
