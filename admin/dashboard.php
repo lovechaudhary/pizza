@@ -16,6 +16,9 @@
 	<br />
 	<div style="padding:20px;;border:1px solid #EEE; border-radius:4px;">
 		<a href="<?php echo APP_PATH ?>add-postcode.php">Add Postcode</a>
+	</div>
+	<div style="padding:20px;;border:1px solid #EEE; border-radius:4px;">
+		<a href="<?php echo APP_PATH ?>add-location.php">Add Location</a>
 	</div>	
 </div>
 <script src="js/jquery.js"></script>

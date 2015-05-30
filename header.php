@@ -43,12 +43,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><img src="images/smalllogo.jpg"></a>
+      <a class="navbar-brand" href="index.php"><img src="images/small-logo.png"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="our-menu.php">Our Menu</a></li>
+        <li><a href="our-menu.php">Menu</a></li>
         <li><a href="#myModal" data-toggle="modal" data-target="#myModal">My Account</a></li>
         <li><a href="contact-us.php">Contact Us</a></li>
         

@@ -29,9 +29,9 @@
 		}		
 	}
 	if(isset($_GET['act'])=='delete' && $_GET['id']!='') {
-		$qre = mysql_query("DELETE FROM tbl_menu WHERE id='".$_GET['id']."' ");
+		$qre = mysql_query("DELETE FROM tbl_product WHERE id='".$_GET['id']."' ");
 		if($qre) {
-			header("location:show-menus.php");
+			header("location:show-prod.php");
 			exit;
 		}		
 	}	

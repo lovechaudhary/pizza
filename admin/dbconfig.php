@@ -12,7 +12,7 @@ $approot = substr(dirname(__FILE__),strlen($_SERVER['DOCUMENT_ROOT']));
 $app= str_replace('\\','/',$approot);
 $http=isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://';
 $url=$http.$_SERVER['HTTP_HOST'].$app.'/';
-$basic_url = $http.$_SERVER['HTTP_HOST'].'/new_pizza/admin/';
+$basic_url = $http.$_SERVER['HTTP_HOST'].'/pizza/admin/';
 // $basic_url = $http.$_SERVER['HTTP_HOST'].'/';
 
 

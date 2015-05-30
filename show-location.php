@@ -6,7 +6,7 @@
 		$res = mysql_fetch_array($qre);
 		$pound = '';
 		if($res['delivery_charge']!='Free Delivery') {
-			$pound = '<img src="images/pound_green.png" width="15"/>';
+			$pound = '<img src="images/pound_green.png" width="11" style="margin:0px 0px 3px 0px;"/>';
 		} else {
 			$pound = '';
 		}

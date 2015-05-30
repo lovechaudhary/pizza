@@ -24,7 +24,7 @@
 					if(isset($_GET['category'])){
 						$qre = mysql_query("SELECT * FROM tbl_product WHERE isdisplay=1 and menu_id='".$_GET['category']."' ORDER BY id");
 					}else{							
-						$qre = mysql_query("SELECT * FROM tbl_product WHERE isdisplay=1 ORDER BY id");
+						$qre = mysql_query("SELECT * FROM tbl_product WHERE isdisplay=1 AND menu_id='10' ORDER BY RAND()");
 					}
 					while($res = mysql_fetch_array($qre)) {
 				?>
@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="col-md-3">
-			<h2>Your Order</h2>
+			<center><h2>Your Order</h2></center>
 				<?php 
 				if(isset($_SESSION['E_products'])) {
 					$total = 0;
@@ -96,12 +96,16 @@
 						<b><?php echo number_format($total, 2); ?></b>
 					</h4>
 				</div>
+				<center>
+					<a style="margin:5px 0 15px 0;" href="javascript:;" class="btn btn-xs btn-danger">Checkout</a>
+				</center>
 			</div>	
 			<?php 
 				} else {
 					echo "<center>Right now Cart is empty</center>";
 				}
 			?>
+
 		</div>
 	
 

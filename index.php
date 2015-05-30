@@ -44,7 +44,7 @@
       
         <div class="signin">
             <form method="post">
-              <h1 class="text-center">Signin to start</h1>
+              <h1 class="text-center">Sign in to start</h1>
               <?php echo (isset($error)) ? $error : ''; ?>
               <div class="form-group">
                 <input type="text" placeholder="email" name="uname" class="form-control" id="" />
@@ -53,16 +53,16 @@
                 <input type="password" placeholder="password" name="pass" class="form-control" id="" />
               </div>
               <button class="btn btn-danger btn-block btnlarge btn-lg" type="submit" name="login">Sign In</button>
-              <a href="#" class="forgot">forgot password</a>
+              <center><a href="#" class="forgot">forgot password ?</a></center>
             </form>  
               <h2 class="text-center" style="text-decoration:underline;font-weight:normal">New Customer?</h2>
               <a href="signup.php" class="newaccount">Create a new account</a>
             </div>
       
         <div class="slider">
-              <img src="images/banner2.jpg" width="100%" alt="">
-              <img src="images/banner3.jpg" width="100%" alt="">
-              <img src="images/banner1.jpg" width="100%" alt="">
+              <img src="images/1.png" width="100%" alt="">
+              <img src="images/2.png" width="100%" alt="">
+              <img src="images/3.png" width="100%" alt="">
         </div>
       </div>
       </div>
@@ -70,21 +70,21 @@
 
   <div class="row" id="small_banners">
       <div class="col-md-4">
-        <img class="img-responsive" src="images/add1.jpg">
+        <img class="img-responsive" src="images/4.png">
       </div>
       <div class="col-md-4">
-        <img class="img-responsive" src="images/add2.jpg">
+        <img class="img-responsive" src="images/5.png">
       </div>
       <div class="col-md-4">
-        <img class="img-responsive" src="images/add3.jpg">
+        <img class="img-responsive" src="images/6.png">
       </div>
 
   </div>
 <br clear="all">
-  <hr>
+  <hr style="border-top:1px solid #D2D2D2;">
 
   <div class="row">
-    <h2>How does Pizza O'More Work?</h2>
+    <h2 style="  margin: 0px 0 0 15px;">How does Pizza O'More Work?</h2>
     <div class="col-md-12">
       <img class="img-responsive" alt="" src="images/odelivery.jpg">
 

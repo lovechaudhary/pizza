@@ -1,6 +1,6 @@
 <?php include('top.php'); ?>
 <?php include('auth.php'); ?>
-<title>Add Menu | Admin</title>
+<title>Add Product | Admin</title>
 </head>
 <?php 
 	if(isset($_POST['submit'])) {

@@ -7,7 +7,7 @@
             <h3>Menu</h3>
             <ul class="list-unstyled">
               <?php 
-                $qre1 = mysql_query("SELECT * FROM tbl_menu WHERE isdisplay=1 ORDER BY menu_name ASC");
+                $qre1 = mysql_query("SELECT * FROM tbl_menu WHERE isdisplay=1 ORDER BY RAND() LIMIT 5 ");
                 while($res1 = mysql_fetch_array($qre1)) {
                   echo '<li class="menu-item"><a class="menu-item-target" href="our-menu.php?category='.$res1['id'].'">'.$res1['menu_name'].'</a></li>';
                 }
@@ -42,15 +42,6 @@
               
               
                 <a class="menu-item-target" href="#" target="_self">FAQ</a>
-              
-              
-              
-              </li>
-              <li class="menu-item">
-              
-              
-              
-                <a class="menu-item-target" href="#" target="_blank">Nutritional information</a>
               
               
               
