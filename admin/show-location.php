@@ -40,7 +40,19 @@
 <?php include('includes/navbar.php'); ?>
 <div class="container">
   	<h1>Location Manager</h1>
-  	<?php ShowLocation() ?>
+  	<?php 
+  		$per_page = 5;
+  		if(isset($_GET['page'])) {
+  			$page = $_GET['page'];
+  		} else {
+  			$page = 1;
+  		}
+
+  		$start_from = ($page-1) * $per_page;
+
+
+  		ShowLocation($start_from, $per_page); 
+  	?>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>

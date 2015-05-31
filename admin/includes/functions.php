@@ -156,8 +156,8 @@ function ShowPostcode() {
 	}	
 }
 
-function ShowLocation() { 
-	$qre = mysql_query("SELECT * FROM tbl_location ORDER BY id DESC");
+function ShowLocation($start_from, $per_page) { 
+	$qre = mysql_query("SELECT * FROM tbl_location ORDER BY id DESC LIMIT $start_from, $per_page");
 	$num = mysql_num_rows($qre);
 	if($num!=0) {
 		?>
@@ -170,6 +170,12 @@ function ShowLocation() {
 			</tr>
 			<?php
 				$i=1;
+				// if(!isset($_GET['count'])) {
+				// 	$i = 1;
+				// } else {
+				// 	$pre_count = $_GET['count'];
+				// 	$i = ($pre_count-5);									
+				// }
 				while($res = mysql_fetch_array($qre)) {
 					extract($res);
 					$publish = '';
@@ -181,6 +187,7 @@ function ShowLocation() {
 					{
 						$display	='<a href="'.APP_PATH.'show-location.php?id='.$id.'&actions=approve"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true" title="Un-publish"></span></a>';	
 					}
+					
 					echo '
 						<tr>
 							<td>'.$i.'</td>
@@ -193,6 +200,19 @@ function ShowLocation() {
 			?>
 		</table>
 		<?php
+
+		$qre1 			= mysql_query("SELECT * FROM tbl_location");
+		$total_records 	= mysql_num_rows($qre1);
+		$total_pages 	= ceil($total_records/$per_page);
+		echo '<nav><ul class="pagination">';
+			echo '<li><a href="show-location.php?page=1">First</a></li>';
+			for($i=1; $i<=$total_pages; $i++) {
+
+					$c= $c + $per_page;
+				echo '<li><a href="show-location.php?page='.$i.'&count='.$c.'">'.$i.'</a></li>';
+			}
+			echo '<li><a href="show-location.php?page='.$total_pages.'">Last</a></li>';
+			echo '</ul></nav>';
 	} else {
 		echo 'There is no record yet....';
 	}
